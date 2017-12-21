@@ -6,9 +6,9 @@ data segement
       org 0
 start:
       inlow        r0
-      inhigh       r1
-      inlow        r2
-      inhigh       r3
+      inhigh       r2
+      ADCR         r0, 0260h
+      ADCR         r2, 0261h
 todo:
       sl           r0
       sl           r1
